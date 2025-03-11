@@ -10,7 +10,7 @@ if !  systemctl is-active --quiet genieacs-{cwmp,fs,ui,nbi}; then
 GENIEACS_CWMP_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-cwmp-access.log
 GENIEACS_NBI_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-nbi-access.log
 GENIEACS_FS_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-fs-access.log
-GENIEACS_UI_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-ui-access.log
+GENIEACS_UI_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-ui-access.loghttps://github.com/andoelcuy/install-genieacs/edit/main/genie.sh
 GENIEACS_DEBUG_FILE=/var/log/genieacs/genieacs-debug.yaml
 GENIEACS_EXT_DIR=/opt/genieacs/ext
 GENIEACS_UI_JWT_SECRET=secret
@@ -102,3 +102,6 @@ else
 fi
 
 #sukses
+echo -e "${GREEN}============================================================================${NC}"
+echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
+echo -e "${GREEN}============================================================================${NC}"
